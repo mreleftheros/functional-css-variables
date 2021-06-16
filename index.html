@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functional Css Variables</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="controls">
+    <div class="control">
+      <label for="spacing">Spacing</label>
+      <input type="range" data-sizing="px" min="0" max="20" step="1" value="0" name="spacing" id="spacing">
+    </div>
+    
+    <div class="control">
+      <label for="blur">Blur</label>
+      <input type="range" data-sizing="px" name="blur" id="blur">
+    </div>
+
+    <div class="control">
+      <label for="background">Background</label>
+      <input type="color" name="background" id="background">
+    </div>
+  </div>
+
+  <div class="img-container">
+    <img src="trees.jpg" alt="trees and sky">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
